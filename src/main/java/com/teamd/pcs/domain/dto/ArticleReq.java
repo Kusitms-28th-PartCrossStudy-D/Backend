@@ -1,6 +1,8 @@
 package com.teamd.pcs.domain.dto;
 
 
+import java.util.List;
+
 import com.teamd.pcs.domain.TagList;
 import lombok.Data;
 
@@ -13,7 +15,5 @@ public class ArticleReq {
 
     private String body;
 
-    private TagList tagList;
-
-
+    private List<TagList> tagList;
 }
