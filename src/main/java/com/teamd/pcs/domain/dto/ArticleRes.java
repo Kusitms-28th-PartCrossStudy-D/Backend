@@ -2,14 +2,16 @@ package com.teamd.pcs.domain.dto;
 
 
 import com.teamd.pcs.domain.TagList;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
+@Builder
 public class ArticleRes {
 
-    private int articleId;
+    private Long articleId;
 
     private String title;
 
@@ -17,7 +19,7 @@ public class ArticleRes {
 
     private String body;
 
-    private TagList tagList;
+//    private TagList tagList;
 
     private LocalDateTime createAt;
 
